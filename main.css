@@ -1,0 +1,347 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Тёмно-серый цвет для остального текста */
+    text-align: center;
+    background-color: #D9D9D9;
+}
+
+header {
+    background-color: #D9D9D9; /* Белый фон для хедера */
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1E1E1E; /* Текст хедера */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #1E1E1E; 
+    text-decoration: none;
+}
+
+/*баннер*/
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 180px 20px;
+    background: url(image/img1.png)center/cover no-repeat;; 
+    color: #fff;
+    min-height: 50vh;
+    position: relative; 
+    overflow: hidden;   
+}
+
+.banner-title {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-family: Helvetica;
+    
+}
+
+.banner-subtitle {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.banner-button {
+    padding: 15px 80px;
+    font-size: 20px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #D9D9D9;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: Helvetica;
+}
+
+/*второй блок*/
+.world-class {
+    background-color: #333; 
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.world-class-title {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.world-class-description {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.world-class-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.phone-button {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+.signup-button {
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+/*курсы */
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ddd; 
+    padding: 20px;
+}
+
+.course {
+    width: 45%; 
+    min-width: 300px;
+    box-sizing: border-box; 
+    margin: 10px;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.course img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.course h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 32px;
+    text-transform: uppercase;
+    z-index: 1; 
+}
+
+
+/* учителя */
+.teachers {
+    background-color: #ddd; 
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 30px; 
+}
+
+.teachers-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.teachers-description {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+/*Преподаватели */
+.teachers-section {
+    background-color: #ddd; 
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.teachers-section-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.teachers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.teacher {
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.teacher-photo {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    object-position: center; 
+}
+
+.teacher-name {
+    font-size: 18px;
+    margin-top: 10px;
+}
+  /*Цены*/
+.prices {
+    background-color: #333; 
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.prices-title {
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.prices-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap;
+}
+
+.price-card {
+    width: 300px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.price-card-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.price-card-price {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.price-card-description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.prices-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    margin-top: 50px;
+}
+
+  /*футер*/
+footer {
+    background-color: #0E559A; 
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    width: 250px; 
+    margin-bottom: 20px;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column p {
+    margin-bottom: 5px;
+}
+
+.footer-column form {
+    display: flex;
+    align-items: center;
+}
+
+.footer-column input[type="email"] {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 150px;
+    font-size: 14px;
+}
+
+.footer-column button[type="submit"] {
+    padding: 8px 12px;
+    background-color: #fff;
+    color: #0E559A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+/*Адаптивность*/
+@media (max-width: 768px) {
+    .course {
+        width: 90%;
+        min-width: auto;
+    }
+}
